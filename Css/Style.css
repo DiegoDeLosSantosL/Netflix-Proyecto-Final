@@ -1,0 +1,362 @@
+/************************
+Fonts
+************************/
+@font-face{
+    font-family: "NetflixSans-Regular";
+    font-weight: 400;
+    font-size: normal;
+    src: 
+        url("../Font/Netflix font Regular/NetflixSansRegular.eot"),
+        url("../font/Netflix font regular/NetflixSansRegular.ttf") format("Truetype"),
+        url("../font/Netflix font regular/NetflixSans-Regular.woff") format("woff"),
+        url("../font/Netflix font regular/NetflixSans-Regular.woff2") format("woff2"),
+        url("../font/Netflix font regular/NetflixSans-Regular.svg") format("svg");
+}
+
+@font-face{
+    font-family: "NetflixSans-Bold";
+    font-weight: 700;
+    font-size: normal;
+    src:
+        url("../Font/Netflix font Bold/NetflixSansBold.eot"),
+        url("../Font/Netflix font Bold/NetflixSansBold.svg") format("svg"),
+        url("../Font/Netflix font Bold/NetflixSansBold.ttf") format("TrueType"),
+        url("../Font/Netflix font Bold/NetflixSansBold.woff") format("woff"),
+        url("../Font/Netflix font Bold/NetflixSansBold.woff2") format("woff2");
+}
+
+/************************
+Variables
+************************/
+:root{
+    --primary-color: #000;
+    --secundary-color: #333;
+    --terteary-color: #999;
+    --quaternary-color:#757575;
+    --quinary-color:#0071eb;
+    --senary-color:#222;
+    --septernary-color:#e50914;
+    --octonary-color:#fff;
+    --nonary-color:#aaa;
+
+    --primary-font: "NetflixSans-Regular", sans-serif;
+    --secundary-font: "NetflixSans-Bold", sans-serif;
+}
+/************************
+Generals
+************************/
+*{
+    box-sizing: border-box;
+}
+/************************
+Typography
+************************/
+html{
+    font-size: 18px;
+    font-family: var(--primary-font);
+}
+h1,h2,h3{
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+figure{
+    margin: 0;
+}
+select{
+    margin: 0;
+}
+/************************
+Components
+************************/
+/* Idioma 1 */
+.home-header select{
+    padding: 7px;
+    border-radius: 2px;
+    background-color: var(--primary-color);
+    border-color: var(--secundary-color);
+    color: var(--terteary-color);
+}
+/* Idioma 2 */
+.select-idioma{
+    padding-left: 40px;
+}
+.select-idioma select{
+    padding: 12px;
+    border-radius: 2px;
+    background-color: var(--primary-color);
+    border-color: var(--secundary-color);
+    color: var(--terteary-color);
+}
+/* Combo Box 2 */
+.combo-box2{
+    display: flex;
+    align-items: center;
+}
+.combo-box2 i{
+    color: var(--octonary-color);
+    width: 16px;
+}
+/* Form */
+.banner-content input{
+    width: 450px;
+    height: 60px;
+    border: 2px;
+}
+.banner-content button{
+    height: 60px;
+    width: 201px;
+    cursor: pointer;
+    border: 2px;
+    background-color: var(--septernary-color);
+    font-size: 26px;
+    color: var(--octonary-color);
+    font-family: var(--primary-font);
+    font-weight: 400;
+}
+/* Iniciar Sesion */
+.home-header a{
+    border-radius: 3px;
+    background-color: var(--septernary-color);
+    color: var(--octonary-color);
+    margin-left: 33px;
+    margin-right: 55px;
+    padding: 7px 18px;
+}
+/* Stranger card */
+#Stranger{
+    border: 1px solid var(--nonary-color);
+    border-radius: 12px;
+    width: 333px;  
+    position: absolute;
+    background-color: var(--primary-color);
+    top: 230%;
+}
+#Stranger .div-home-Stranger{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#Stranger img{
+    width: 60px;
+    padding-left: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+#animation .image-animation{
+    width: 60px;
+}
+#Stranger .div2{
+    display: inline;
+}
+#Stranger p{
+    padding-left: 16.6px;
+}
+#Stranger .p1{
+    font-size: 16px;
+    padding-top: 28px;
+    line-height: 20px;
+}
+#Stranger .p2{
+    font-size: 14.4px;
+    padding-bottom: 28px;
+    line-height: 19px;
+}
+/************************
+Style
+************************/
+/* Container 1 */
+.container{
+    width: 1343px;
+    padding: 0px 10px;
+    margin: 0 auto;
+    border-bottom: 8px solid var(--senary-color);
+    /* background-color: var(--primary-color); */
+}
+/* Header */
+.main-home-header{
+    width: 100%;
+    position: fixed;
+}
+.home-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+.home-header img{
+    width: 170px;
+    padding-left: 40px;
+}
+/* Banner */
+.main-h-hero-banner{
+    background-color: var(--primary-color);
+}
+.main-h-hero-banner{
+    background-image: url(../img/fondo.jpg);
+    box-shadow: 0px 0px 155px 20px rgba(0,0,0,0.75) inset;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.h-hero-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 145px;
+    padding-bottom: 145px;
+}
+.banner-content h1, h2, h3{
+    color: var(--octonary-color);
+    margin: auto;
+}
+.banner-content h2, h3{
+    font-family: var(--primary-font);
+}
+.banner-content h1{
+    font-family: var(--secundary-font);
+    font-size: 50px;
+    line-height: 55px;
+    width: 645px;
+    padding-bottom: 16px;
+}
+.banner-content h2{
+    font-size: 26px;
+    line-height: 33px;
+    font-weight: 400;
+    padding-bottom: 25px;
+}
+.banner-content h3{
+    font-size: 19.2px;
+    line-height: 24px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+/* Section 2 */
+.main-home-disfruta{
+    background-color: var(--primary-color);
+}
+.home-disfruta{
+    display: flex;
+    align-items: center;
+}
+.home-disfruta div{
+    padding-top: 105px;
+    padding-bottom: 105px;
+}
+.home-disfruta .disfruta-div1{
+    padding-left: 120px;
+}
+.home-disfruta .disfruta-div2{
+    padding-left: 50px;
+}
+.home-disfruta div h2{
+    font-family: var(--secundary-font);
+    font-size: 50px;
+    line-height: 55px;
+    color: var(--octonary-color);
+}
+.home-disfruta div p{
+    font-family: var(--primary-font);
+    font-size: 26px;
+    line-height: 33px;
+    color: var(--octonary-color);
+    max-width: 540px;
+}
+.home-disfruta img{
+    width: 530px;
+}
+/* Section 3 */
+.main-home-descarga{
+    background-color: var(--primary-color);
+}
+.home-descarga{
+    display: flex;
+    align-items: center;
+}
+.container-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 80px;
+}
+.home-descarga div h2{
+    font-family: var(--secundary-font);
+    font-size: 50px;
+    line-height: 55px;
+    color: var(--octonary-color);
+    max-width: 472px;
+}
+.home-descarga div p{
+    font-family: var(--primary-font);
+    font-size: 26px;
+    line-height: 33px;
+    color: var(--octonary-color);
+    max-width: 509px;
+}
+.home-descarga img{
+    width: 505px;
+}
+/* Footer */
+.main-home-footer{
+    background-color: var(--primary-color);
+}
+.home-footer{
+    padding: 72px 0 30px;
+}
+.home-footer p{
+    color: var(--quaternary-color);
+    line-height: 20px;
+    font-size: 16px;
+    padding-bottom: 18px;
+    padding-left: 40px;
+}
+.home-footer ul{
+    list-style-type: none;
+    font-size: 13px;
+    line-height: 16px;
+}
+.home-footer a{
+    color: var(--quaternary-color);
+}
+.home-footer li{
+    padding-bottom: 16px;
+}
+.home-footer ul div{
+    box-sizing: border-box;
+    padding: 0;
+    margin-bottom: 16px;
+    display: inline-block;
+    min-width: 100px;
+    width: 24%;
+    padding-right: 12px;
+    vertical-align: top;
+}
+.netflix{
+    padding-top: 24px;
+}
+
+
+/* Video de carga */
+#overlay {
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.hide {
+    display: none;
+}
+#vintro{    
+    width: 100%;
+    text-align: center; 
+}
