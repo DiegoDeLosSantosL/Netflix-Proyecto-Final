@@ -18,8 +18,14 @@
     </head>
     <body>
         <div class="intro-div" id="overlay">
-            <video id="vintro" src="Video/intro netflix.mp4" autoplay></video>
+            <video id="vintro" src="video/intro-netflix.mp4" autoplay muted></video>
         </div>
+<!-- 
+        <div class="intro-div" id="overlay">
+            <video id="vintro" autoplay muted>
+                <source src="video/intro-netflix.mp4" type="video/mp4">
+            </video>
+        </div> -->
 
         <header class="main-home-header">
             <div class="home-header">
@@ -40,6 +46,7 @@
         <main>
             <section class="main-h-hero-banner">
                 <div class="container">
+                    <div class="h-home-gradient"></div>
                     <div class="h-hero-banner">
                         <div class="banner-content">
                             <div>
@@ -51,7 +58,7 @@
                             <div>
                                 <form action="">
                                     <input type="email" placeholder="Email" name="Correo_Electronico" required>
-                                    <button type="submit" >Comenzar > </i> </button>
+                                    <button type="submit" >Comenzar <i class="fas fa-chevron-right"></i> </button>
                                 </form>
                             </div>
                         </div>
@@ -177,10 +184,8 @@
                     <div class="home-select-idioma">
                         <div class="select-idioma">
                             <select class="idioma" name="" id="">
-                                <optgroup>
-                                    <option value="">Español</option>
-                                    <option value="">Ingles</option>
-                                </optgroup>
+                                <option value="">Español</option>
+                                <option value="">Ingles</option>
                             </select>
                         </div>
                     </div>

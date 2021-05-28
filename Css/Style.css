@@ -82,6 +82,9 @@ Components
     color: var(--terteary-color);
 }
 /* Idioma 2 */
+.home-select-idioma .select-idioma {
+    position: relative;
+}
 .home-select-idioma .select-idioma::before{
     display: inline-block;
     font-style: normal;
@@ -95,15 +98,15 @@ Components
     content: "\f0ac";
     color: var(--octonary-color);
     position: absolute;
-    transform: translate(-50%, -50%);
     top: 50%;
-    left: 5%;
+    left: 9px;
+    transform: translateY(-50%);
 }
 .select-idioma{
-    padding-left: 40px;
+    margin-left: 40px;
 }
 .select-idioma select{
-    padding: 12px;
+    padding: 12px 12px 12px 24px;
     border-radius: 2px;
     background-color: var(--primary-color);
     border-color: var(--secundary-color);
@@ -205,6 +208,7 @@ Style
 }
 /* Banner */
 .main-h-hero-banner{
+    position: relative;
     background-color: var(--primary-color);
 }
 .main-h-hero-banner{
@@ -377,6 +381,7 @@ Style
     height: 100%;
     top: 0;
     left: 0;
+    z-index: 100;
 }
 .hide {
     display: none;
@@ -384,4 +389,14 @@ Style
 #vintro{    
     width: 100%;
     text-align: center; 
+}
+/******************/
+.h-home-gradient {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
 }
