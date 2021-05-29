@@ -7,11 +7,11 @@
         <!-- Favicon -->
         <link rel="icon" href="img/favicon.ico" type="image/x-icon">
         <!-- Style -->
-        <link rel="stylesheet" href="Css/Style.css">
+        <link rel="stylesheet" href="css/style.css">
         <!-- Bootstrap -->
         <!-- <link rel="stylesheet" href="Css/bootstrap.min.css"> -->
-        <!-- Normalize -->
-        <link rel="stylesheet" href="Css/Normalize.css">
+            <!-- Normalize -->
+        <link rel="stylesheet" href="css/normalize.css">
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
         <title>Netflix</title>
@@ -20,31 +20,24 @@
         <div class="intro-div" id="overlay">
             <video id="vintro" src="video/intro-netflix.mp4" autoplay muted></video>
         </div>
-<!-- 
-        <div class="intro-div" id="overlay">
-            <video id="vintro" autoplay muted>
-                <source src="video/intro-netflix.mp4" type="video/mp4">
-            </video>
-        </div> -->
-
-        <header class="main-home-header">
-            <div class="home-header">
-                <div>
-                    <figure>
-                        <img src="img/Netflix_logo.svg" alt="Texto">
-                    </figure>
-                </div>
-                <div>
-                    <select name="" id="">
-                        <option value="">Español</option>
-                        <option value="">Ingles</option>
-                    </select>
-                    <a href="#">Iniciar sesión</a>
-                </div>
-            </div>
-        </header>
         <main>
             <section class="main-h-hero-banner">
+                <header class="main-home-header">
+                    <div class="home-header">
+                        <div>
+                            <figure>
+                                <img src="img/Netflix_logo.svg" alt="Texto">
+                            </figure>
+                        </div>
+                        <div>
+                            <select name="" id="">
+                                <option value="">Español</option>
+                                <option value="">Ingles</option>
+                            </select>
+                            <a href="#">Iniciar sesión</a>
+                        </div>
+                    </div>
+                </header>
                 <div class="container">
                     <div class="h-home-gradient"></div>
                     <div class="h-hero-banner">
@@ -56,7 +49,7 @@
                                     <h3>¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</h3>
                             </div>
                             <div>
-                                <form action="">
+                                <form action="" method="POST">
                                     <input type="email" placeholder="Email" name="Correo_Electronico" required>
                                     <button type="submit" >Comenzar <i class="fas fa-chevron-right"></i> </button>
                                 </form>
@@ -75,7 +68,7 @@
                         <div class="disfruta-div2">
                             <figure>
                                 <img src="img/tv.png" alt="">
-                                <video src="Video/video-tv-0819.m4v" autoplay loop muted></video>
+                                <video src="video/video-tv-0819.m4v" autoplay loop muted></video>
                             </figure>
                         </div>
                     </div>

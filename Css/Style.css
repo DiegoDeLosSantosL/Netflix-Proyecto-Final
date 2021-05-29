@@ -79,7 +79,7 @@ Components
     border-radius: 2px;
     background-color: var(--primary-color);
     border-color: var(--secundary-color);
-    color: var(--terteary-color);
+    color: var(--octonary-color);
 }
 /* Idioma 2 */
 .home-select-idioma .select-idioma {
@@ -113,10 +113,15 @@ Components
     color: var(--terteary-color);
 }
 /* Form */
+.banner-content form{
+    display: flex;
+    justify-content: center;
+}
 .banner-content input{
     width: 450px;
     height: 60px;
     border: 2px;
+    padding: 10px;
 }
 .banner-content button{
     height: 60px;
@@ -179,6 +184,7 @@ Components
     font-size: 14.4px;
     padding-bottom: 28px;
     line-height: 19px;
+    color: var(--quinary-color);
 }
 /************************
 Style
@@ -194,7 +200,8 @@ Style
 /* Header */
 .main-home-header{
     width: 100%;
-    position: fixed;
+    position: relative;
+    z-index: 2;
 }
 .home-header{
     display: flex;
@@ -217,6 +224,7 @@ Style
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+    border-bottom: 8px solid var(--senary-color);
 }
 .h-hero-banner{
     display: flex;
@@ -225,6 +233,9 @@ Style
     text-align: center;
     padding-top: 145px;
     padding-bottom: 145px;
+}
+.banner-content{
+    z-index: 2;
 }
 .banner-content h1, h2, h3{
     color: var(--octonary-color);
@@ -275,6 +286,7 @@ Style
     font-size: 50px;
     line-height: 55px;
     color: var(--octonary-color);
+    padding-bottom: 19px;
 }
 .home-disfruta div p{
     font-family: var(--primary-font);
@@ -303,6 +315,7 @@ Style
 .home-descarga{
     display: flex;
     align-items: center;
+    padding-left: 45px;
 }
 .container-card{
     position: relative;
@@ -320,6 +333,7 @@ Style
     color: var(--octonary-color);
     max-width: 472px;
     margin: 0;
+    padding-bottom: 19px;
 }
 .home-descarga div p{
     font-family: var(--primary-font);
@@ -400,3 +414,6 @@ Style
     background: rgba(0,0,0,.4);
     background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
 }
+/************************
+Responsive
+************************/
