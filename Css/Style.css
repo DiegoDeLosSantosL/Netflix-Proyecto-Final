@@ -659,3 +659,21 @@ Media Querie
         padding-left: 12px;
     }
 }
+@media screen and (max-width: 360px){
+    .home-header a{
+        text-align: center;
+    }
+    .home-disfruta .disfruta-div2{
+        padding-left: 0;
+    }
+    .home-descarga{
+        padding-left: 30px;
+    } 
+    .container-card{
+        padding-right: 35px;
+    }
+    #Stranger{
+        left: 43%;
+        width: 75%;
+    }
+}
